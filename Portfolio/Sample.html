@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio Website</title>
+  <link rel="stylesheet" href="Style.css" />
+</head>
+
+<body>
+  <nav>
+        <div class="nav__content">
+            <div class="logo"><a href="#">ChillCoders</a></div>
+            <label for="check" class="checkbox">
+                <i class="ri-menu-line"></i>
+            </label>
+           
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#team">Team</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+  <div class="portfolio-container">
+    <!-- Main Intro Section -->
+    <div class="left-container" id="home">
+      <div class="content">
+        <p class="intro">Hi! We Are <span>ChillCoder's</span></p>
+        <h1>Web Developers.</h1>
+        <p class="detail">
+          🔧 We enjoy solving real-world problems through code
+          <br>
+          💡 Always learning. Always improving.
+          <br>
+          🚀 Let's build something great together!
+        </p>
+        <div class="btn-container">
+          <button id="workBtn">Work with us</button>
+          <button id="projectsBtn">View projects</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="right-container"></div>
+
+
+    <div class="design">
+      <div class="circle"></div>
+      <div class="circle">
+        <img src="images/L.jpeg" alt="logo">
+      </div>
+
+    </div>
+
+  </div>
+
+  <section class="container about-section" id="about">
+    <h2 class="section-title" id="about">About Us</h2>
+    <p class="about-text">
+      We are <strong>Team ChillCode</strong>, a group of enthusiastic web developers passionate about building modern,
+      responsive, and user-centric web applications. Our team blends creativity with functionality to deliver
+      sleek interfaces. Whether it's designing clean UIs or developing full-stack web solutions,
+      we are committed to coding with clarity, collaboration, and curiosity.
+    </p>
+    <p class="about-text">
+      As B.Tech students in Artificial Intelligence and Data Science,
+      we bring a unique blend of analytical thinking and technical skills.
+      From wireframing in Figma to deploying real-time applications with Node.js and MongoDB,
+      we continuously explore, learn, and innovate.
+    </p>
+  </section>
+
+  <!-- Team Section -->
+  <section class="container" id="team">
+    <h2 class="section-title">Our Team</h2>
+    <div class="team-grid">
+      <div class="team-member" onclick="openModal('palak')">
+        <img src="images/Palak1.jpeg" alt="Palak Soni" class="thumb-img" />
+        <p>Palak Soni</p>
+      </div>
+      <div class="team-member" onclick="openModal('janvi')">
+        <img src="images/Janvi.jpeg" alt="Janvi Shah" class="thumb-img" />
+        <p>Janvi Shah</p>
+      </div>
+      <div class="team-member" onclick="openModal('arya')">
+        <img src="images/arya.png" alt="Arya Kawli" class="thumb-img" />
+        <p>Arya Kawli</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team Member Modals -->
+  <div id="palak" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('palak')">&times;</span>
+      <img src="images/Palak1.jpeg" alt="Palak Soni" class="profile-img" />
+      <h2>Palak Soni</h2>
+      <p class="education"></p>
+      <p>Hi, I’m Palak Soni — a passionate 1st year engineering student pursuing
+        B.Tech in AI & DS – DJ Sanghvi College , Mumbai, with a CGPA of 9.4 in First Year.
+      </p>
+      <br>
+      <p><strong>Skills:</strong> Python , MERN stack , php</p>
+      <p><strong>Project:</strong> ToDo List , Calculator , Drink water reminder app.</p>
+    </div>
+  </div>
+
+  <div id="janvi" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('janvi')">&times;</span>
+      <img src="images/Janvi.jpeg" alt="Janvi Shah" class="profile-img" />
+      <h2>Janvi Shah</h2>
+      <p class="education"></p>
+      <p>Hi, I’m Janvi Shah — a passionate 1st year engineering student pursuing
+        B.Tech in AI & DS – DJ Sanghvi College , Mumbai, with a CGPA of 9.55 in First Year.
+      </p>
+      <br>
+      <p><strong>Skills:</strong> MERN stack , C++ , Python</p>
+      <p><strong>Project:</strong> Login Page , Image Gallery , PDF-Merger</p>
+    </div>
+  </div>
+
+  <div id="arya" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('arya')">&times;</span>
+      <img src="images/arya.png" alt="Arya Kawli" class="profile-img" />
+      <h2>Arya Kawli</h2>
+      <p class="education"></p>
+      <p>Hi, I’m Arya Kawli — a passionate 1st year engineering student pursuing
+        B.Tech in AI & DS – DJ Sanghvi College , Mumbai, with a CGPA of 9.32 in First Year.
+      </p>
+      <br>
+      <p><strong>Skills:</strong> Java , Python ,Arduino Programming</p>
+      <p><strong>Project:</strong> TaskFlow – Real-time task management app.</p>
+    </div>
+  </div>
+
+  <!-- Projects Section -->
+  <section class="container projects-section" id="projects">
+    <h2 class="section-title-1">Projects</h2>
+    <div class="projects-grid">
+      <div class="project-card">
+        <h3>ToDo List</h3>
+        <img src="images/ToDo.png" alt="" class="project-img">
+        <p> Built Simple and responsive to-do list application demonstrating understanding of DOM manipulation,
+          event handling, and data persistence using browser storage.</p>
+          <br>
+        <p><strong>Tech Used:</strong> HTML , CSS , JavaScript</p>
+      </div>
+      <div class="project-card">
+        <h3>Calculator</h3>
+        <img src="images/Calci.png" alt="" class="project-img">
+        <p>Designed and built a fully functional Calcultor which could perform basic mathematical opertaion</p>
+        </p>
+        <br>
+        <p><strong>Tech Used:</strong> HTML , CSS , JavaScript</p>
+      </div>
+      <div class="project-card">
+        <h3>Login Page</h3>
+        <img src="images/Login.png" alt="" class="project-img">
+        <p>Built a responsive login page using HTML, CSS, and JavaScript with form validation and a clean, modern
+          design.
+        </p>
+        <br>
+        <p><strong>Tech Used:</strong> Node.js , Hostlinger</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- contact section -->
+  <!-- Contact Section -->
+  <section class="container contact-section" id="contact">
+    <h2 class="section-title">Contact Us</h2>
+    <div class="contact-card">
+      <h3>Palak Soni</h3>
+      <p>Email: <a href="mailto:sonipalak049@gmail.com">sonipalak049@gmail.com</a></p>
+      <p>Phone: <a href="tel:9168512772">9168512772</a></p>
+    </div>
+
+    <div class="contact-card">
+      <h3>Janvi Shah</h3>
+      <p>Email: <a href="mailto:janvishah571@gmail.com">janvishah571@gmail.com</a></p>
+      <p>Phone: <a href="tel:+917666939301">+91 76669 39301</a></p>
+    </div>
+
+    <div class="contact-card">
+      <h3>Arya Kawli</h3>
+      <p>Email: <a href="mailto:kawliarya166@gmail.com">kawliarya166@gmail.com</a></p>
+      <p>Phone: <a href="tel:+918856946132">+91 88569 46132</a></p>
+    </div>
+  </section>
+  <!-- Footer -->
+  <footer id="contact">
+    <p>© 2025 Team ChillCode. Designed with 💙 for IEEE SB MUJ.</p>
+  </footer>
+</body>
+
+</html>
+
+<script src="main.js"></script>
+</body>
+
+</html>
